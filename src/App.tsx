@@ -55,12 +55,14 @@ function App() {
           Operations Research Logistics Calculator
         </p>
         <button
-          type="button"
-          onClick={() => window.history.back()}
-          className="inline-flex items-center gap-2 rounded-lg border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition hover:bg-muted"
-        >
-          Volver
-        </button>
+        type="button"
+        onClick={() => {
+          window.location.href = "https://tight-amethyst-8cqo9ere.edgeone.app/";
+        }}
+        className="inline-flex items-center gap-2 rounded-lg border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition hover:bg-muted"
+      >
+        Volver
+      </button>
       </div>
 
       {!hasSolved ? (
